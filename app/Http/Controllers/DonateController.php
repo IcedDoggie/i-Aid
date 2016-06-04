@@ -67,8 +67,10 @@ class DonateController extends Controller {
 
             $org = $org->donates()->save($donate);
             return \Redirect::to('/')
-                ->with('message', 'Your donate has been created!');
+
+                ->with('message', 'Your donate has been made!');
 	}
+
 
     
 

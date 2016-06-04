@@ -2,6 +2,10 @@
 
 @section('content')
 
+@if(Session::has('message'))
+<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
+
 <div class="container">
                 
                
@@ -12,14 +16,16 @@
                           <div class="card">
                             <div class="card-image">
                               <img  style="opacity:0.7;" src="https://topnonprofits.com/wp-content/uploads/2012/01/WWF-Best-Nonprofit-Logos-e1329714254182.png">
-                              <span style="color:black; font-weight:bold"class="card-title">Card Title</span>
+                              <span style="color:black; font-weight:bold"class="card-title">Event</span>
                             </div>
                             <div class="card-content">
                               <p>I am a very simple card. I am good at containing small bits of information.
                               I am convenient because I require little markup to use effectively.</p>
                             </div>
-                            <div class="card-action">
-                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right">Donate</a>
+
+                            <div class="card-action" style="height:60px;">
+                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;style="background-color:#ee6e73"">Participate</a>
+
                             </div>
                           </div>
                     </div>
