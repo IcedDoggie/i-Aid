@@ -23,8 +23,7 @@
                         <th>DESCRIPTION</th>
                          @foreach($organizations as $organization)
                             <th class="text-right">OPTIONS</th>
-                            <th><a href="{{ URL::route('organizations.donates.create', [$organization->id]) }}" 
-                    class='btn btn-primary'>Create a task</a></th>
+                            
                         </tr>
                     </thead>
 
@@ -43,6 +42,8 @@
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <button type="submit" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
                                     </form>
+                                    <a href="{{ URL::route('organizations.donates.create', [$organization->id]) }}" 
+                                        class='btn btn-primary'>Create a task</a>
                                 </td>
                             </tr>
                         @endforeach

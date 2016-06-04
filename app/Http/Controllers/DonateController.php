@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Donate;
+use App\Organization;
 use Illuminate\Http\Request;
 
 class DonateController extends Controller {
@@ -25,7 +26,7 @@ class DonateController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($listId)
 	{
 		return view('donates.create');
 	}
@@ -36,7 +37,7 @@ class DonateController extends Controller {
 	 * @param Request $request
 	 * @return Response
 	 */
-	public function store(Request $request)
+/*	public function store(Request $request)
 	{
 		$donate = new Donate();
 
@@ -45,7 +46,27 @@ class DonateController extends Controller {
 		$donate->save();
 
 		return redirect()->route('donates.index')->with('message', 'Item created successfully.');
-	}
+	}*/
+
+	public function store($listId, DonateCreateFormRequest $request)
+    {
+    	echo $id;
+        //$user = User::find(\Auth::id());
+        if ($user->owns($listId)) {
+            $list = Organization::findOrFail($listId);
+            $task = new Organization(array(
+                'amount' => $request->get('amount'),
+                //'due' => $request->get('due'),
+                //'done' => true ? $request->get('done') == 'true' : false
+            ));
+            $task = $list->tasks()->save($task);
+            return \Redirect::route('organizations.show', array($list->id))
+                ->with('message', 'Your task has been created!');
+        } else {
+            return \Redirect::route('home')
+                ->with('message', 'Authorization error: you do not own this list.');
+        }
+    }
 
 	/**
 	 * Display the specified resource.
