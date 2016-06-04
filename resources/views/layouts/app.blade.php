@@ -52,12 +52,12 @@
 
 
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/donate') }}">Donate</a></li>
+                    <li><a href="{{ url('/donates') }}">Donate</a></li>
                 </ul>
 
 
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/donate') }}">Donate</a></li>
+                    <li><a href="{{ url('/donates') }}">Donate</a></li>
                 </ul>
 
 

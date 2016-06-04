@@ -27,4 +27,10 @@ Route::resource('/update_profile', 'ProfileController@update');
 Route::resource('/donates','DonateController');
 
 
+
 Route::resource('/donations','DonationController@create');
+
+Route::post('/organiztions/{post}/donates',['as' => 'donates.new','uses' =>'DonatesController@new']);
+
+
+
