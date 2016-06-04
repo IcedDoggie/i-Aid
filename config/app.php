@@ -26,11 +26,10 @@ return [
     |
     */
 
-<<<<<<< HEAD
+
     'debug' => env('APP_DEBUG', true),
-=======
+
     'debug' => env('APP_DEBUG', false),
->>>>>>> 75e0af8f21a62ecfe90a610a0e7e50e16a8c7093
 
     /*
     |--------------------------------------------------------------------------
@@ -161,13 +160,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-<<<<<<< HEAD
-        
 
-
-
-=======
->>>>>>> 75e0af8f21a62ecfe90a610a0e7e50e16a8c7093
     ],
 
     /*

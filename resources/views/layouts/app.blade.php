@@ -50,7 +50,7 @@
                     <li><a href="{{ url('/home') }}">Home</a></li>
                 </ul>
 
-<<<<<<< HEAD
+
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/donate') }}">Donate</a></li>
                 </ul>
@@ -60,8 +60,7 @@
                 </ul>
 
 
-=======
->>>>>>> 75e0af8f21a62ecfe90a610a0e7e50e16a8c7093
+
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
@@ -89,10 +88,9 @@
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<<<<<<< HEAD
-=======
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
->>>>>>> 75e0af8f21a62ecfe90a610a0e7e50e16a8c7093
+
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>

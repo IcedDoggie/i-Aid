@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-<?php 
-=======
 <?php
 
->>>>>>> 75e0af8f21a62ecfe90a610a0e7e50e16a8c7093
+
 namespace App\Http\Controllers\Auth;
 
 use App\User;
