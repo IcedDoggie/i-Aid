@@ -16,27 +16,32 @@ Route::model('organization','Organization');
 Route::model('donate','Donate');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Route::auth();
 
+
+
 Route::get('/home', 'HomeController@index');
 
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::resource("/organizations","OrganizationController"); // Add this line in routes.php
+
+Route::resource("/organizations","OrganizationController@index"); // Add this line in routes.php
+
+Route::post('/organizations/create', 'OrganizationController@create');
+
 Route::resource('/update_profile', 'ProfileController@update');
 
 Route::resource('/donates','DonateController');
 
 
 
-Route::resource('/donations','DonationController@create');
+Route::resource('/donations','DonateController@create');
 
 Route::resource('/organizations.donates', 'DonateController');
 
 //Route::post('/organizations/{$id}donates/', 'DonateController');
-
-
-
 

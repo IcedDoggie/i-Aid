@@ -27,6 +27,8 @@ class DonateController extends Controller {
 	 *
 	 * @return Response
 	 */
+
+
 	public function create($org_id)
 	{
        
@@ -61,13 +63,16 @@ class DonateController extends Controller {
                 //'due' => $request->get('due'),
                 //'done' => true ? $request->get('done') == 'true' : false
             ));
+         
+
             $org = $org->donates()->save($donate);
             return \Redirect::to('/')
+
                 ->with('message', 'Your donate has been made!');
+	}
 
 
-       
-    }
+    
 
 	/**
 	 * Display the specified resource.

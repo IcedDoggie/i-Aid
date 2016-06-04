@@ -19,6 +19,7 @@
                         <tr>
                             <th>ID</th>
                             <th>AMOUNT</th>
+                            <th>ORGANIZATION</th>
                             <th class="text-right">OPTIONS</th>
                         </tr>
                     </thead>
