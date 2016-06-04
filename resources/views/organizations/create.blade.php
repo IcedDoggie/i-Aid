@@ -38,7 +38,7 @@
                     </div>
                 <div class="well well-sm">
                     <button type="submit" class="btn btn-primary">Create</button>
-                    <a class="btn btn-link pull-right" href="{{ route('organizations.index') }}"><i class="glyphicon glyphicon-backward"></i> Back</a>
+                    <a class="btn btn-link pull-right" href="{{ route('/donates') }}"><i class="glyphicon glyphicon-backward"></i> Back</a>
                 </div>
             </form>
 

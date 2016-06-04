@@ -31,13 +31,10 @@ Route::resource('/donates','DonateController');
 
 
 
-Route::resource('/donations','DonationController@create');
+Route::resource('/donations','DonateController@create');
 
 Route::resource('/organizations.donates', 'DonateController');
 
 Route::post('organizations/{id}/donates/create', 'DonateController@store');
 
-
-
-Route::resource('/organizations','OrganizationController@create');
 

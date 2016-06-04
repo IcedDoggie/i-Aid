@@ -26,7 +26,7 @@ class DonateController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create($listId)
+	public function create()
 	{
 		return view('donates.create');
 	}
@@ -63,7 +63,7 @@ class DonateController extends Controller {
             return \Redirect::route('organizations.show', array($list->id))
                 ->with('message', 'Your task has been created!');
         } else {
-            return \Redirect::route('home')
+            return Redirect::route('home')
                 ->with('message', 'Authorization error: you do not own this list.');
         }
     }
