@@ -56,6 +56,7 @@
 
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
+                    
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
                         <li><a href="{{ url('/register') }}">Register</a></li>
@@ -66,6 +67,7 @@
                         </li>
                         <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                     @endif
+                    <hr>
                     <li><a href="{{ url('/') }}">Organization</a></li>
                     <hr>
                     <li><a href="{{ url('/home') }}">Event</a></li>
