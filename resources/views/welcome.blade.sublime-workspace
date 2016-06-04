@@ -1,0 +1,205 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"good",
+				"good_new"
+			],
+			[
+				"frame",
+				"frame_gray"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Documents/AngelHack2016/Laravel Codes/test.php",
+		"/E/Documents/Project/FirstTalk/i-Aid/.env",
+		"/E/Documents/AngelHack2016/MOLPAY SAMPLE SOURCE CODE v1.1/MOLPAY SAMPLE SOURCE CODE v1.1/callback.php",
+		"/C/xampp/htdocs/i-Aid/server.php",
+		"/E/Documents/Project/FirstTalk/i-Aid/bootstrap/autoload.php",
+		"/E/Documents/Project/FirstTalk/i-Aid/config/app.php",
+		"/E/Documents/AngelHack2016/MOLPAY SAMPLE SOURCE CODE v1.1/MOLPAY SAMPLE SOURCE CODE v1.1/checkout.php",
+		"/E/Documents/AngelHack2016/MOLPAY SAMPLE SOURCE CODE v1.1/MOLPAY SAMPLE SOURCE CODE v1.1/confirmation.php",
+		"/E/Documents/AngelHack2016/MOLPAY SAMPLE SOURCE CODE v1.1/MOLPAY SAMPLE SOURCE CODE v1.1/return.php",
+		"/C/TDM-GCC-64/README-gcc-tdm64.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Workplace Communication/Lecture notes/Chap 1.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Workplace Communication/Lecture notes/Chap 5.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Workplace Communication/Lecture notes/Chap 6.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/TITAS/summarized1.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/TITAS/Tamadun India.TXT",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/TITAS/summarized2.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Hubungan Etnik/Chap 1.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Hubungan Etnik/Chapter 8.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Hubungan Etnik/Chap 7.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Hubungan Etnik/Chap 4.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Tips.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Hubungan Etnik/Chap 2.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/TITAS/al-Rasyidin.txt",
+		"/E/Documents/Project/CrackingAOTG/Astro on the Go_v7.7.0_apkpure.com/smali/com/astro/otglibrary/common/RootUtil.smali",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/Workplace Communication/MockMeeting",
+		"/E/Documents/MMU Studies/Python Scripts/lucasKanade.py",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/TITAS/Ummayah.txt",
+		"/E/Documents/MMU Studies/Degree 2nd Year/ThirdSem/TITAS/Tamadun China.txt",
+		"/E/Documents/Hackerspace/jackwong.txt",
+		"/E/Documents/Hackerspace/jackwong"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			":goto_0",
+			"root",
+			"JUMP"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "welcome.blade.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -26,6 +26,10 @@ return [
     |
     */
 
+
+    'debug' => env('APP_DEBUG', true),
+
+
     'debug' => env('APP_DEBUG', false),
 
     /*
@@ -147,6 +151,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Laralib\L5scaffold\GeneratorsServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -155,6 +160,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 
