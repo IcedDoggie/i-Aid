@@ -16,6 +16,7 @@ class CreateDonatesTable extends Migration {
             $table->increments('id');
             $table->decimal('amount');
             $table->timestamps();
+            
         });
 	}
 

@@ -17,6 +17,8 @@ class CreateDonationsTable extends Migration {
             $table->string('title')->default('Tweet #1');
             $table->text('body');
             $table->timestamps();
+            
+
         });
 	}
 
