@@ -19,7 +19,7 @@
                               I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                              <a class="waves-effect waves-light btn right">Donate</a>
+                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right">Donate</a>
                             </div>
                           </div>
                     </div>

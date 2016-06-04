@@ -28,7 +28,6 @@ class DonateController extends Controller {
 	 * @return Response
 	 */
 
-	public function create()
 
 	public function create($org_id)
 	{
@@ -64,22 +63,14 @@ class DonateController extends Controller {
                 //'due' => $request->get('due'),
                 //'done' => true ? $request->get('done') == 'true' : false
             ));
-
-            $task = $list->tasks()->save($task);
-            return \Redirect::route('organizations.show', array($list->id))
-                ->with('message', 'Your task has been created!');
-        } else {
-            return Redirect::route('home')
-                ->with('message', 'Authorization error: you do not own this list.');
-        }
+         
 
             $org = $org->donates()->save($donate);
             return \Redirect::to('/')
                 ->with('message', 'Your donate has been created!');
+	}
 
-
-       
-    }
+    
 
 	/**
 	 * Display the specified resource.
