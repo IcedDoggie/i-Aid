@@ -12,6 +12,9 @@
 |
 */
 
+Route::model('organization','Organization');
+Route::model('donate','Donate');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -30,7 +33,8 @@ Route::resource('/donates','DonateController');
 
 Route::resource('/donations','DonationController@create');
 
-Route::post('/organiztions/{post}/donates',['as' => 'donates.new','uses' =>'DonatesController@new']);
+Route::resource('/organizations.donates', 'DonateController');
+
 
 Route::resource('/organizations','OrganizationController@create');
 
