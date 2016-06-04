@@ -55,8 +55,9 @@
                     <li><a href="{{ url('/donate') }}">Donate</a></li>
                 </ul>
 
+
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Join Event</a></li>
+                    <li><a href="{{ url('/donate') }}">Donate</a></li>
                 </ul>
 
 

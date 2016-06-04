@@ -1,7 +1,6 @@
 <?php
 
 
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -22,6 +21,14 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 
-Route::get('/donate','DonationController@index');
+Route::resource("/organizations","OrganizationController"); // Add this line in routes.php
+Route::resource('/update_profile', 'ProfileController@update');
+
+
+Route::resource('/donations','DonationController');
+
+
+Route::resource('/donates','DonateController');
+
 
 Route::resource('/donations','DonationController@create');

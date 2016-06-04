@@ -4,7 +4,11 @@
     <div class="page-header clearfix">
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Donations
+<<<<<<< HEAD
             <a class="btn btn-success pull-right" href="{{ url('/donateCreate') }}"><i class="glyphicon glyphicon-plus" ></i> Create</a>
+=======
+            <a class="btn btn-success pull-right" href="{{ route('donations.create') }}"><i class="glyphicon glyphicon-plus"></i> Create</a>
+>>>>>>> d2ff0a5f71787d1e0aa2f170be3f11674223b302
         </h1>
 
     </div>

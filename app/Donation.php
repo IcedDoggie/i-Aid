@@ -10,4 +10,6 @@ class Donation extends Model
     protected $fillable = [ 
     	'amount', 'organizationID', 'name',
      ]; 
+
+
 }
