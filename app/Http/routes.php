@@ -24,5 +24,8 @@ Route::resource("/organizations","OrganizationController"); // Add this line in 
 Route::resource('/update_profile', 'ProfileController@update');
 
 
-Route::get('/donate','DonationController@index');
+Route::resource('/donations','DonationController');
+
+
+Route::resource('/donates','DonateController');
 

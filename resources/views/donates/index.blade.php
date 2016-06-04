@@ -3,8 +3,8 @@
 @section('header')
     <div class="page-header clearfix">
         <h1>
-            <i class="glyphicon glyphicon-align-justify"></i> Donations
-            <a class="btn btn-success pull-right" href="{{ route('donations.create') }}"><i class="glyphicon glyphicon-plus"></i> Create</a>
+            <i class="glyphicon glyphicon-align-justify"></i> Donates
+            <a class="btn btn-success pull-right" href="{{ route('donates.create') }}"><i class="glyphicon glyphicon-plus"></i> Create</a>
         </h1>
 
     </div>
@@ -13,27 +13,25 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
-            @if($donations->count())
+            @if($donates->count())
                 <table class="table table-condensed table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>TITLE</th>
-                        <th>BODY</th>
+                            <th>AMOUNT</th>
                             <th class="text-right">OPTIONS</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        @foreach($donations as $donation)
+                        @foreach($donates as $donate)
                             <tr>
-                                <td>{{$donation->id}}</td>
-                                <td>{{$donation->title}}</td>
-                    <td>{{$donation->body}}</td>
+                                <td>{{$donate->id}}</td>
+                                <td>{{$donate->amount}}</td>
                                 <td class="text-right">
-                                    <a class="btn btn-xs btn-primary" href="{{ route('donations.show', $donation->id) }}"><i class="glyphicon glyphicon-eye-open"></i> View</a>
-                                    <a class="btn btn-xs btn-warning" href="{{ route('donations.edit', $donation->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
-                                    <form action="{{ route('donations.destroy', $donation->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };">
+                                    <a class="btn btn-xs btn-primary" href="{{ route('donates.show', $donate->id) }}"><i class="glyphicon glyphicon-eye-open"></i> View</a>
+                                    <a class="btn btn-xs btn-warning" href="{{ route('donates.edit', $donate->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                                    <form action="{{ route('donates.destroy', $donate->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <button type="submit" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
@@ -43,7 +41,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                {!! $donations->render() !!}
+                {!! $donates->render() !!}
             @else
                 <h3 class="text-center alert alert-info">Empty!</h3>
             @endif
