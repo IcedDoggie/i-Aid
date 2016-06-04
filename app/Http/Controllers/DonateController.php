@@ -62,8 +62,10 @@ class DonateController extends Controller {
                 //'done' => true ? $request->get('done') == 'true' : false
             ));
             $org = $org->donates()->save($donate);
-            return \Redirect::route('/home')
+            return \Redirect::to('/')
                 ->with('message', 'Your donate has been created!');
+
+
        
     }
 
