@@ -7,7 +7,7 @@
     <div class="page-header clearfix">
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Organizations
-            <a class="btn btn-success pull-right" href="{{ route('organizations.create') }}"><i class="glyphicon glyphicon-plus"></i> Create</a>
+            <a href="{{ url('/organizations/donates') }}" class="btn btn-success pull-right" href="{{ route('organizations.create') }}"><i class="glyphicon glyphicon-plus"></i> Create</a>
         </h1>
 
     </div>

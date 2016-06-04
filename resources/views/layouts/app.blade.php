@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
     <!-- google materailize icon-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
@@ -32,12 +32,24 @@
     <nav>
         <div class="nav-wrapper">
             <div class="container">
-                <a href="#"  data-activates="mobile-demo" class="button-collapse"><i style="height:0px;"class="material-icons"></i>menu</a>
+                <a href="#"  data-activates="mobile-demo" class="button-collapse"><i style="height:0px;"class="material-icons">menu</i></a>
                 <ul class="left hide-on-med-and-down">
                   <li><a id="orgbutton" href="{{ url('/organizations') }}">Organization</a></li>
                   <li><a id="eventbutton" href="{{ url('/home') }}">Event</a></li>
                 </ul>
-      
+
+                <ul class="brand-logo center"><a id="eventbutton" href="{{ url('/home') }}"><span style="font-size:40px;">i-Aid</span></a></ul>
+                <ul class="right hide-on-med-and-down">
+                          <!-- Authentication Links -->
+                          @if (Auth::guest())
+                              <li><a href="{{ url('/login') }}">Login</a></li>
+                              <li><a href="{{ url('/register') }}">Register</a></li>
+                          @else
+                              <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                      {{ Auth::user()->name }} <span class="caret"></span>
+                                  </a>
+                          @endif
 
                 <ul class="side-nav" id="mobile-demo">
                     

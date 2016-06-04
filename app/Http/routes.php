@@ -31,6 +31,8 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::resource("/organizations","OrganizationController@index"); // Add this line in routes.php
 
+Route::post('/organizations/create', 'OrganizationController@create');
+
 Route::resource('/update_profile', 'ProfileController@update');
 
 Route::resource('/donates','DonateController');
