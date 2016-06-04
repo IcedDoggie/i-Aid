@@ -15,6 +15,7 @@ class AddOrganizationToDonates extends Migration
         //
         Schema::table('donates',function($table){
             $table->integer('organization');
+            $table->foreign('organization')->references('id')->on('donates');
         });
     }
 
