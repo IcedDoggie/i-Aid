@@ -22,8 +22,8 @@
                               <p>I am a very simple card. I am good at containing small bits of information.
                               I am convenient because I require little markup to use effectively.</p>
                             </div>
-                            <div class="card-action">
-                              <a class="waves-effect waves-light btn right">Donate</a>
+                            <div class="card-action" style="height:60px;">
+                              <a class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Donate</a>
                             </div>
                           </div>
                     </div>

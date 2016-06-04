@@ -16,9 +16,6 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <!-- Styles -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}} -->
 
     <style>
         body {
@@ -28,6 +25,7 @@
         .fa-btn {
             margin-right: 6px;
         }
+        
     </style>
 </head>
 <body id="app-layout">
@@ -58,18 +56,20 @@
 
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                      <li><a href="{{ url('/') }}">Organization</a></li>
-                      <li><a href="{{ url('/home') }}">Event</a></li>
-                      @if (Auth::guest())
-                              <li><a href="{{ url('/login') }}">Login</a></li>
-                              <li><a href="{{ url('/register') }}">Register</a></li>
-                          @else
-                              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                      {{ Auth::user()->name }} <span class="caret"></span>
-                                  </a>
-                              </li>
-                              <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                          @endif
+                    @if (Auth::guest())
+                        <li><a href="{{ url('/login') }}">Login</a></li>
+                        <li><a href="{{ url('/register') }}">Register</a></li>
+                    @else
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                          {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                    @endif
+                    <li><a href="{{ url('/') }}">Organization</a></li>
+                    <hr>
+                    <li><a href="{{ url('/home') }}">Event</a></li>
+                    <hr>
                 </ul>
             </div>  
         </div>
