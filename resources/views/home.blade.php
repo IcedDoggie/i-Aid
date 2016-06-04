@@ -5,31 +5,52 @@
 @if(Session::has('message'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
-
+<style>
+    .card{
+        height:400px;
+        width: 450px;
+    }
+    
+    .card-image{
+        height: 250px;
+        width: 450px;
+    }
+    
+    
+</style>
 <div class="container">
-                
                
                 <div class="row">
                     
-                    @for ($i=0;$i<4;$i++) 
-                    <div class="col s12 m6">
-                          <div class="card">
-                            <div class="card-image">
-                              <img  style="opacity:0.7;" src="https://topnonprofits.com/wp-content/uploads/2012/01/WWF-Best-Nonprofit-Logos-e1329714254182.png">
-                              <span style="color:black; font-weight:bold"class="card-title">Event</span>
-                            </div>
-                            <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                            <div class="card-action" style="height:60px;">
-                              <a class="waves-effect waves-light btn right" style="margin-top:-10px;style="background-color:#ee6e73"">Participate</a>
-                            </div>
-                          </div>
+                    <div class="card col s12 m6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Berlin_marathon.jpg">
+                        </div>
+                        <div class="card-content" style="margin-bottom:50px;">
+                          <span class="card-title activator grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right">close</i></span>
+                          <p>Kepong, Malaysia.</p>
+                        </div>
                     </div>
-                    @endfor
-
-                </div>
+                    
+                    <div class="card col s12 m6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSsfFGgv-HtPoWkFkS9DF1eNLHQDQ9bev5rkHBeKAEuuyoiEm2aw">
+                        </div>
+                        <div class="card-content" style="margin-bottom:50px;">
+                          <span class="card-title activator grey-text text-darken-4">Organic Farmstay – education center<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Organic Farmstay – education center<i class="material-icons right">close</i></span>
+                          <p>Kuala Selangor, Selangor.</p>
+                        </div>
+                    </div>
+                    
+                   
                 
 
 </div>

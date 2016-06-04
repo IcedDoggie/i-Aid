@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>i-Aid</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
@@ -16,10 +16,12 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
     <style>
         body {
-            font-family: 'Lato';
+            font-family: 'Josefin Sans', sans-serif;
         }
 
         .fa-btn {
@@ -37,7 +39,7 @@
                   <li><a id="orgbutton" href="{{ url('/') }}">Organization</a></li>
                   <li><a id="eventbutton" href="{{ url('/home') }}">Event</a></li>
                 </ul>
-                <ul class="brand-logo center"><a id="eventbutton" href="{{ url('/home') }}"><span style="font-size:40px;">i-Aid</span></a></ul>
+                <ul class="brand-logo center"><a id="eventbutton" href="{{ url('/') }}"><span style="font-size:40px;">i-Aid</span></a></ul>
                 <ul class="right hide-on-med-and-down">
                           <!-- Authentication Links -->
                           @if (Auth::guest())
@@ -57,17 +59,19 @@
 
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
+                    <div class="header" style="background-color:#ee6e73">
+                        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                              {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                            </li>
+                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                        @endif
+                    </div>
                     
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                          {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-                        </li>
-                        <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                    @endif
                     <hr>
                     <li><a href="{{ url('/') }}">Organization</a></li>
                     <hr>
