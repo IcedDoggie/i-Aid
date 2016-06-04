@@ -25,12 +25,9 @@
                             </div>
 
                             <div class="card-action" style="height:60px;">
-<<<<<<< HEAD
-                              <a class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
-=======
-                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;style="background-color:#ee6e73"">Participate</a>
 
->>>>>>> 5bd511d38e5058f25943450a366cb77cf6f1ef3f
+                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
+
                             </div>
                           </div>
                     </div>
@@ -48,7 +45,7 @@
                                </p>
                             </div>
                             <div class="card-action" style="height:60px;">
-                              <a class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
+                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
                             </div>
                           </div>
                     </div>
@@ -66,7 +63,7 @@
                                 Type  : DIY Camp - 30-Hour Famine</p>
                             </div>
                             <div class="card-action" style="height:60px;">
-                              <a class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
+                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
                             </div>
                           </div>
                     </div>
