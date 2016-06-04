@@ -35,8 +35,7 @@ Route::resource('/donations','DonationController@create');
 
 Route::resource('/organizations.donates', 'DonateController');
 
-Route::post('organizations/{id}/donates/create', 'DonateController@store');
-
+//Route::post('/organizations/{$id}donates/', 'DonateController');
 
 
 
