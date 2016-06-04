@@ -21,12 +21,15 @@
                             <th>NAME</th>
                         <th>IMAGE_URL</th>
                         <th>DESCRIPTION</th>
+                         @foreach($organizations as $organization)
                             <th class="text-right">OPTIONS</th>
+                            <th><a href="{{ URL::route('organizations.donates.create', [$organization->id]) }}" 
+                    class='btn btn-primary'>Create a task</a></th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        @foreach($organizations as $organization)
+                       
                             <tr>
                                 <td>{{$organization->id}}</td>
                                 <td>{{$organization->name}}</td>
