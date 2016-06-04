@@ -21,11 +21,11 @@
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     }
 
-    #forgotpassword:hover{
+    a:hover{
         color:#0033ff; 
     }
     
-    #forgotpassword{
+    a{
 
         color:grey;
         margin-bottom:20px;

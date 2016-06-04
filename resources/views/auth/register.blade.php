@@ -20,7 +20,7 @@
 
 </style>
 <body style="background-color:#1e434d;">
-<div class="container" style="margin-top: 30px;">
+<div class="container">
     <div class="row">
         <div class="col s8 offset-s2 m6 offset-m3" style="text-align:center;background-color:white;border-radius:20%">
             <div class="panel panel-default">
@@ -34,12 +34,12 @@
 
                             <div class="input-field col m6 offset-m3 s8 offset-s2" >
                                 <input placeholder="Name" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
-								
-								@if($errors->has('name'))
+
+                                 ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
-                                
+                                @endif 
                             </div>
                         </div>
 
