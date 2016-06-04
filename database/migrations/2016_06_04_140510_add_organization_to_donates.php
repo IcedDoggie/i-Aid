@@ -13,6 +13,9 @@ class AddOrganizationToDonates extends Migration
     public function up()
     {
         //
+        Schema::table('donates',function($table){
+            $table->integer('organization');
+        });
     }
 
     /**
@@ -23,5 +26,8 @@ class AddOrganizationToDonates extends Migration
     public function down()
     {
         //
+        Schema::table('donates',function($table){
+            $table->dropColumn('organization');
+        });
     }
 }
