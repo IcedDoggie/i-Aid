@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<?php
+=======
 <?php
+>>>>>>> 75e0af8f21a62ecfe90a610a0e7e50e16a8c7093
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +22,10 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
 Route::resource("/organizations","OrganizationController"); // Add this line in routes.php
 Route::resource('/update_profile', 'ProfileController@update');
+
+
+Route::get('/donate','DonationController@index');
+
