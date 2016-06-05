@@ -10,8 +10,11 @@
     }
     
     .card-image{
-        height: 250px;
-        width: 415px;
+       display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:250px;
+        width: 420px;
     }
     
     
@@ -24,14 +27,15 @@
                
                 <div class="row">
                     
-
                     <div class="card col s12 m6">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Berlin_marathon.jpg">
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                            <hr>
+                          <label style="color:green;"><strong>FREE</strong></label>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Participate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right">close</i></span>
@@ -45,7 +49,9 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">Organic Farmstay – education center<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                            <hr>
+                          <label style="color:green;"><strong>FREE</strong></label>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Participate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">Organic Farmstay – education center<i class="material-icons right">close</i></span>
@@ -59,7 +65,9 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">MPA CHARITY RUN<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                            <hr>
+                          <label style="color:green;"><strong>FREE</strong></label>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Participate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">MPA CHARITY RUN<i class="material-icons right">close</i></span>
@@ -76,7 +84,9 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">30-Hour Famine Event<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                            <hr>
+                          <label style="color:green;"><strong>FREE</strong></label>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Participate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">30-Hour Famine Event<i class="material-icons right">close</i></span>
