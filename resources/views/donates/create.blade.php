@@ -1,8 +1,8 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
     <div class="page-header">
-        <h1><i class="glyphicon glyphicon-plus"></i> Donates / Create </h1>
+        <h1><i class="glyphicon glyphicon-plus"></i> Enter Donation Amount </h1>
     </div>
 @endsection
 <?php 
@@ -13,7 +13,7 @@
   $merchant_id  = (string)env('MER_ID','development');
   $verifykey    = (string)env('VER_KEY','development');
 
-  $orderid      = "TEAM_NAME".rand(1,9999999);
+  $orderid      = "I-AID".rand(1,9999999);
   $returnurl    = "http://localhost:8000/home";
   $callbackurl  = "";
   
@@ -52,25 +52,54 @@
 
 @section('content')
     @include('error')
+<style>
 
+    .separator{
+        border:0;
+        width: 90%;
+        margin-left:5%;
+        margin-bottom: 0px;
+        height:1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    #forgotpassword:hover{
+        color:#0033ff; 
+    }
+    
+    #forgotpassword{
+
+        color:grey;
+        margin-bottom:20px;
+    }
+
+</style>
+<div class="container">
     <div class="row">
         <div class="col-md-12">
 
-            <form action="{{ route('organizations.donates.store', $organization->id)}}" method="POST">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-                <div class="form-group @if($errors->has('amount')) has-error @endif">
-                       <label for="amount-field">Amount</label>
+            <div class="row">
+        <div class="col s8 offset-s2 m6 offset-m3" style="text-align:center; margin-top:20px; background-color:white;border-radius:20%" >
+            <div class="panel panel-default" style="text-align:center; margin-top:20px;">
+                <div class="panel-heading"><h1><span style="color: #ee6e73;">Amount</span></h1></div>
+                <div class="separator"></div>
+                <div class="panel-body">
+                    <form action="{{ route('organizations.donates.store', $organization->id)}}" method="POST" class="form-horizontal" role="form">
+                        {{ csrf_field() }}
+                        
+                        <div class="form-group @if($errors->has('amount')) has-error @endif">
+                      
                     <input type="text" id="amount-field" name="amount" class="form-control" value="1.10"/>
                        @if($errors->has("amount"))
                         <span class="help-block">{{ $errors->first("amount") }}</span>
                        @endif
                     </div>
-                <div class="well well-sm">
-                    <button type="submit" class="btn btn-primary" style="display:none">Create</button>
-                    
+             
+                    </form>
                 </div>
-            </form>
+            </div>
+        </div>
+    </div>
 
             <form action="https://pay.molpay.com/MOLPay/pay/MOLWallet_Dev1/" method="POST" class="form-horizontal">
    <div class="form-group form-group-sm" style="display:none;">
@@ -138,5 +167,6 @@
             
 
         </div>
+    </div>
     </div>
 @endsection

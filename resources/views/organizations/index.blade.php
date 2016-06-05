@@ -2,6 +2,20 @@
 
 @section('header')
 @if(Session::has('message'))
+<style>
+    .card{
+        height:400px;
+        width: 450px;
+    }
+    
+    .card-image{
+        height: 250px;
+        width: 450px;
+    }
+    
+    
+</style>
+
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
     <div class="page-header clearfix">
@@ -96,7 +110,7 @@
                             </tr>
                         @endforeach
                     </tbody>
-                </table> -->
+                </table> -->s
                 {!! $organizations->render() !!}
             @else
                 <h3 class="text-center alert alert-info">Empty!</h3>
