@@ -66,7 +66,7 @@
 
                     
                     <hr>
-                    <li><a href="{{ url('/') }}">Organization</a></li>
+                    <li><a href="{{ url('/organizations') }}">Organization</a></li>
                     <hr>
                     <li><a href="{{ url('/home') }}">Event</a></li>
                     <hr>

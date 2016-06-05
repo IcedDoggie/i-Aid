@@ -14,7 +14,7 @@
         margin-left: auto;
         margin-right: auto;
         height:250px;
-        width: 420px;
+        width: 430px;
     }
     
     
@@ -29,7 +29,7 @@
                     
                     <div class="card col s12 m6">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Berlin_marathon.jpg">
+                          <img class="activator"  src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Berlin_marathon.jpg">
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
@@ -82,7 +82,7 @@
                     
                     <div class="card col s12 m6">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="https://www.petsmartcharities.org/sites/all/themes/responsive/images/theme/header_logo.png">
+                          <img class="activator" src="https://secure.artezimages.com/secure/artez/worldvision/images/30-hour-header_2013.jpg">
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">30-Hour Famine Event<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
