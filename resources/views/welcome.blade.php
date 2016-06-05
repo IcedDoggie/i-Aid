@@ -8,12 +8,15 @@
 <style>
     .card{
         height:400px;
-        width: 450px;
+        width: 420px;
     }
     
     .card-image{
-        height: 250px;
-        width: 450px;
+       display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:250px;
+        width: 420px;
     }
     
     
@@ -29,6 +32,7 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">Petsmart Charities<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                            <hr>
                           <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
@@ -43,7 +47,8 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">amfAR<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
+                            <hr>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">amFar<i class="material-icons right">close</i></span>
@@ -57,7 +62,8 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">The Asia Foundation<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
+                            <hr>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">The Asia Foundation<i class="material-icons right">close</i></span>
@@ -71,7 +77,8 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">SPCA Selangor<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
+                            <hr>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">SPCA Selangor<i class="material-icons right">close</i></span>
@@ -85,7 +92,8 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">Borneo Conservacy<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
+                            <hr>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">Borneo Conservacy<i class="material-icons right">close</i></span>
