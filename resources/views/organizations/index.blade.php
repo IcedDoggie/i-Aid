@@ -68,7 +68,7 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">{{$organization->name}}<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
-                          <p><a href="{{ URL::route('organizations.donates.create', $organization->id) }}" class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                          <p><a href="{{ URL::route('organizations.donates.create', $organization->id) }}" class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">{{$organization->description}}<i class="material-icons right">close</i></span>
