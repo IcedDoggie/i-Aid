@@ -12,6 +12,7 @@
 |
 */
 
+
 Route::model('organization','Organization');
 Route::model('donate','Donate');
 
@@ -23,6 +24,11 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::group(['middleware' => ['web']], function () {
+    Route::post('/callback', 'OrganizationController@callback');
+});
+
 
 
 Route::resource("/organizations","OrganizationController"); // Add this line in routes.php

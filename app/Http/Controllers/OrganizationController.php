@@ -20,6 +20,17 @@ class OrganizationController extends Controller {
 		return view('organizations.index', compact('organizations'));
 	}
 
+	public function callback()
+	{
+       
+       $organizations = Organization::orderBy('id', 'desc')->paginate(10);
+
+		return view('organizations.index', compact('organizations'));
+	
+      
+        
+	}
+
 	/**
 	 * Show the form for creating a new resource.
 	 *

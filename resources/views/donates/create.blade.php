@@ -14,7 +14,7 @@
   $verifykey    = (string)env('VER_KEY','development');
 
   $orderid      = "I-AID".rand(1,9999999);
-  $returnurl    = "http://localhost:8000/home";
+  $returnurl    = "http://localhost:8000/organizations";
   $callbackurl  = "";
   
   //DO NOT CHANGE
@@ -120,7 +120,7 @@
    </div>
    <div class="form-group form-group-sm" style="display:none;>
       <label for="bill_name" class="col-sm-2 control-label">bill_name</label>
-      <div class="col-sm-10"><input type="text" class="form-control" id="bill_name " name="bill_name" value="jack"></div>
+      <div class="col-sm-10"><input type="text" class="form-control" id="bill_name " name="bill_name" value="TzeWei"></div>
    </div>
    <div class="form-group form-group-sm" style="display:none;>
       <label for="bill_email" class="col-sm-2 control-label">bill_email</label>
@@ -136,7 +136,7 @@
    </div>
    <div class="form-group form-group-sm" style="display:none;>
       <label for="returnurl" class="col-sm-2 control-label">returnurl</label>
-      <div class="col-sm-10"><input type="text" class="form-control" id="returnurl " name="returnurl" value="http://localhost:8000/home"></div>
+      <div class="col-sm-10"><input type="text" class="form-control" id="returnurl " name="returnurl" value="http://localhost:8000/callback"></div>
    </div>
    <div class="form-group form-group-sm" style="display:none;>
       <label for="callbackurl" class="col-sm-2 control-label">callbackurl</label>
