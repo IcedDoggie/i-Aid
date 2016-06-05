@@ -8,7 +8,6 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 
 <style>
 
@@ -21,11 +20,11 @@
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     }
 
-    a:hover{
+    #forgotpassword:hover{
         color:#0033ff; 
     }
     
-    a{
+    #forgotpassword{
 
         color:grey;
         margin-bottom:20px;
@@ -38,7 +37,7 @@
     <div class="row">
         <div class="col s8 offset-s2 m6 offset-m3" style="text-align:center; margin-top:20px; background-color:white;border-radius:20%" >
             <div class="panel panel-default" style="text-align:center; margin-top:20px;">
-                <div class="panel-heading"><h1><span style="color: #ee6e73;font-family: 'Open Sans', sans-serif;">i-Aid</span></h1></div>
+                <div class="panel-heading"><h1><span style="color: #ee6e73;">Login</span></h1></div>
                 <div class="separator"></div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">

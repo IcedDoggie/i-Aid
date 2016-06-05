@@ -2,80 +2,92 @@
 @if(Session::has('message'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
+
+<style>
+    .card{
+        height:400px;
+        width: 450px;
+    }
+    
+    .card-image{
+        height: 250px;
+        width: 450px;
+    }
+    
+    
+</style>
+
 @section('content')
 
+
 <div class="container">
-                
                
                 <div class="row">
                     
-                    @for ($i=0;$i<4;$i++) 
-                    <div class="col s12 m6">
-                          <div class="card">
-                            <div class="card-image">
-                              <img  style="opacity:0.7;" src="https://topnonprofits.com/wp-content/uploads/2012/01/WWF-Best-Nonprofit-Logos-e1329714254182.png">
-                              <span style="color:black; font-weight:bold"class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
-                            </div>
 
-                            <div class="card-action">
-                              <a class="waves-effect waves-light btn right">Donate</a>
-                            </div>
-                          </div>
+                    <div class="card col s12 m6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Berlin_marathon.jpg">
+                        </div>
+                        <div class="card-content" style="margin-bottom:50px;">
+                          <span class="card-title activator grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right">close</i></span>
+                          <p>Kepong, Malaysia.</p>
+                        </div>
                     </div>
-                    @endfor
-
-
-                            <div class="card-action" style="height:60px;">
-
-                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
-
-                            </div>
-                          </div>
+                    
+                    <div class="card col s12 m6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSsfFGgv-HtPoWkFkS9DF1eNLHQDQ9bev5rkHBeKAEuuyoiEm2aw">
+                        </div>
+                        <div class="card-content" style="margin-bottom:50px;">
+                          <span class="card-title activator grey-text text-darken-4">Organic Farmstay – education center<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Organic Farmstay – education center<i class="material-icons right">close</i></span>
+                          <p>Kuala Selangor, Selangor.</p>
+                        </div>
                     </div>
-
-                    <div class="col s12 m6">
-                          <div class="card">
-                            <div class="card-image">
-                              <img  style="opacity:0.7;" src="https://www.petsmartcharities.org/sites/all/themes/responsive/images/theme/header_logo.png">
-                              <span style="color:black; font-weight:bold"class="card-title">MPA CHARITY RUN</span>
-                            </div>
-                            <div class="card-content">
-                               <p>September 25, 2016 (Sunday)
+                    
+                    <div class="card col s12 m6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="https://www.petsmartcharities.org/sites/all/themes/responsive/images/theme/header_logo.png">
+                        </div>
+                        <div class="card-content" style="margin-bottom:50px;">
+                          <span class="card-title activator grey-text text-darken-4">MPA CHARITY RUN<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">MPA CHARITY RUN<i class="material-icons right">close</i></span>
+                          <p>September 25, 2016 (Sunday)
                                 The race starts at 6:00 AM
                                 Shorter than 10 km race - 8 kilometers
                                </p>
-                            </div>
-                            <div class="card-action" style="height:60px;">
-                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
-                            </div>
-                          </div>
+                        </div>
                     </div>
-
-
-                    <div class="col s12 m6">
-                          <div class="card">
-                            <div class="card-image">
-                              <img  style="opacity:0.7;" src="http://asiafoundation.org/images/logo-230.png">
-                              <span style="color:black; font-weight:bold"class="card-title">30-Hour Famine Event</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Location : FOON YEW HIGH SCHOOL - KULAI
+                    
+                    <div class="card col s12 m6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="https://www.petsmartcharities.org/sites/all/themes/responsive/images/theme/header_logo.png">
+                        </div>
+                        <div class="card-content" style="margin-bottom:50px;">
+                          <span class="card-title activator grey-text text-darken-4">30-Hour Famine Event<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+                          <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Participate</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">30-Hour Famine Event<i class="material-icons right">close</i></span>
+                          <p>Location : FOON YEW HIGH SCHOOL - KULAI
                                 Date  : 2016-06-11
                                 Type  : DIY Camp - 30-Hour Famine</p>
-                            </div>
-                            <div class="card-action" style="height:60px;">
-                              <a href="{{ url('/donates') }}" class="waves-effect waves-light btn right" style="margin-top:-10px;background-color:#ee6e73">Join</a>
-                            </div>
-                          </div>
+                        </div>
                     </div>
 
-
-
                 </div>
+
                 
 
 </div>
