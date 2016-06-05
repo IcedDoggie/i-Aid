@@ -8,7 +8,7 @@
         width: 420px;
     }
     
-    .card-image{
+    .activator{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -33,12 +33,15 @@
 @section('content')
 <style>
     .card{
-        height:350px;
-        width: 430px;
+        height:400px;
+        width: 420px;
     }
     
-    .card-image{
-        height: 200px;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:250px;
         width: 420px;
     }
     

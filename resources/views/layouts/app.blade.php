@@ -64,27 +64,12 @@
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
 
-                    <div class="header" style="background-color:#ee6e73">
-                        @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                            <li><a href="{{ url('/register') }}">Register</a></li>
-                        @else
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                              {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-                            </li>
-                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                        @endif
-                    </div>
                     
                     <hr>
                     <li><a href="{{ url('/') }}">Organization</a></li>
                     <hr>
                     <li><a href="{{ url('/home') }}">Event</a></li>
                     <hr>
-
-                      <li><a href="{{ url('/') }}">Organization</a></li>
-                      <li><a href="{{ url('/home') }}">Event</a></li>
                       @if (Auth::guest())
                               <li><a href="{{ url('/login') }}">Login</a></li>
                               <li><a href="{{ url('/register') }}">Register</a></li>
