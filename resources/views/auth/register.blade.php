@@ -19,6 +19,7 @@
 }
 
 </style>
+
 <body style="background-color:#1e434d;">
 <div class="container" style="margin-top: 30px;">
     <div class="row">
@@ -34,8 +35,8 @@
 
                             <div class="input-field col m6 offset-m3 s8 offset-s2" >
                                 <input placeholder="Name" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
-								
-								@if($errors->has('name'))
+
+                                 @if($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>

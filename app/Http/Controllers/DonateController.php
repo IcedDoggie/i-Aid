@@ -62,6 +62,14 @@ class DonateController extends Controller {
                 //'done' => true ? $request->get('done') == 'true' : false
             ));
             $org = $org->donates()->save($donate);
+
+
+            // MOL pay
+            
+
+
+
+
             return \Redirect::to('/')
                 ->with('message', 'Your donate has been made!');
 
