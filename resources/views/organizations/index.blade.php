@@ -5,12 +5,15 @@
 <style>
     .card{
         height:400px;
-        width: 450px;
+        width: 420px;
     }
     
     .card-image{
-        height: 250px;
-        width: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:250px;
+        width: 420px;
     }
     
     
@@ -68,6 +71,9 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">{{$organization->name}}<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+
+                            <hr>
+
                           <p><a href="{{ URL::route('organizations.donates.create', $organization->id) }}" class="waves-effect waves-light btn right" style="background-color:#ee6e73; margin-top:10px;">Donate</a></p>
                         </div>
                         <div class="card-reveal">
