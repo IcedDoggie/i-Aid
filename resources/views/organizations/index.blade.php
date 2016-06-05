@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
 @if(Session::has('message'))
@@ -14,10 +14,30 @@
 @endsection
 
 @section('content')
+
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             @if($organizations->count())
-                <table class="table table-condensed table-striped">
+            @foreach($organizations as $organization)
+             <div class="col s12 m6">
+                          <div class="card">
+                            
+                            <div class="card-content">
+                            <div class="card-image">
+                              <img  style="opacity:0.7;width:200px;" src="{{$organization->image_url}}" class="text-right">
+                              <span style="color:black; font-weight:bold"class="card-title">{{$organization->name}}</span>
+                            </div>
+                              <p>{{$organization->description}}</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="{{ URL::route('organizations.donates.create', $organization->id) }}" class='waves-effect waves-light btn right'>Donate</a>
+                            </div>
+                          </div>
+            </div>
+             @endforeach
+
+                <!--<table class="table table-condensed table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -45,12 +65,12 @@
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <button type="submit" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
                                     </form>
-                                    <a href="{{ URL::route('organizations.donates.create', $organization->id) }}" class='btn btn-primary'>Donate</a>
+                                    
                                 </td>
                             </tr>
                         @endforeach
                     </tbody>
-                </table>
+                </table> -->
                 {!! $organizations->render() !!}
             @else
                 <h3 class="text-center alert alert-info">Empty!</h3>
@@ -58,5 +78,5 @@
 
         </div>
     </div>
-
+</div>
 @endsection
