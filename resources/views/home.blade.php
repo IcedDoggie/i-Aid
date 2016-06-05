@@ -33,9 +33,11 @@
                         </div>
                         <div class="card-content" style="margin-bottom:50px;">
                           <span class="card-title activator grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right" style="font-size: 40px;">info_outline</i></span>
+
                             <hr>
                           <label style="color:green;"><strong>FREE</strong></label>
                           <p><a class="waves-effect waves-light btn right" style="background-color:#ee6e73;">Participate</a></p>
+
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">Frost the Trail KL Corporate Charity Run<i class="material-icons right">close</i></span>
@@ -98,14 +100,16 @@
 
                 </div>
 
-                
+
+
+                            
 
 </div>
 <script>
         $( document ).ready(function() {
             
-            $("#orgbutton").addClass("active");
-            
+            $('.modal-trigger').leanModal();
+           
         });
 </script>
 @endsection
