@@ -6,12 +6,12 @@
 <style>
     .card{
         height:400px;
-        width: 450px;
+        width: 420px;
     }
     
     .card-image{
         height: 250px;
-        width: 450px;
+        width: 415px;
     }
     
     

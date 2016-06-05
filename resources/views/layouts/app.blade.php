@@ -42,10 +42,10 @@
                 <a href="#"  data-activates="mobile-demo" class="button-collapse"><i style="height:0px;"class="material-icons">menu</i></a>
 
                 <ul class="left hide-on-med-and-down">
-                  <li><a id="orgbutton" href="{{ url('/') }}">Organization</a></li>
+                  <li><a id="orgbutton" href="{{ url('/organizations') }}">Organization</a></li>
                   <li><a id="eventbutton" href="{{ url('/home') }}">Event</a></li>
                 </ul>
-                <ul class="brand-logo center"><a id="eventbutton" href="{{ url('/') }}"><span style="font-size:40px;">i-Aid</span></a></ul>
+                <ul class="brand-logo center"><a id="eventbutton" href="#"><span style="font-size:40px;">i-Aid</span></a></ul>
 
                 <ul class="right hide-on-med-and-down">
                           <!-- Authentication Links -->
@@ -57,11 +57,8 @@
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                       {{ Auth::user()->name }} <span class="caret"></span>
                                   </a>
-
-                                  <ul class="dropdown-menu" role="menu">
-                                      <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                                  </ul>
                               </li>
+                              <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                           @endif
 
                 </ul>
